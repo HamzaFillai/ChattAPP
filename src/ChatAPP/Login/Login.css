@@ -1,0 +1,125 @@
+.containe
+{
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containe>.cont
+{
+    text-align: center;}
+
+.containe>.cont i
+{
+    color: rgb(190, 219, 187,0.7);
+}
+
+.containe>.cont>.form
+{
+    background-color: rgb(173,238,207,0.1);
+    padding: 12px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.containe>.cont>.form h1
+{
+    color: #433520;
+    font-family: cursive;
+    
+}
+
+.containe>.cont>.form .vali
+{
+    color: red;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.containe>.cont>.form .inp1
+{
+    background-color: transparent;  
+    font-size: 20px; 
+    color: black;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.containe>.cont>.form ::placeholder {
+    color: black;
+    opacity: 0.8; /* Firefox */
+  }
+
+.containe>.cont>.form .btn
+{
+    background-color: #bfcba8;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.containe>.cont>.form .web
+{
+    font-size: 19px;
+    color: #433520;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.containe>.cont>.form .web a
+{
+    color: rgb(49, 49, 170);
+    cursor: pointer;
+    outline: none;
+}
+
+.modal
+{
+    margin-top: 50px;
+}
+
+.modal .register
+{
+    background-color: #e6e6e6;
+}
+
+.modal .register h1
+{
+    margin-left:90px;
+}
+
+.modal .register .val
+{
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.modal .register .err
+{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.modal .register table
+{
+    margin-left: 55px;
+}
+
+.modal .register table>tbody>tr
+{
+    height: 70px;
+}
+
+.modal .register table>tbody>tr>td label
+{
+    font-weight: bold;
+}

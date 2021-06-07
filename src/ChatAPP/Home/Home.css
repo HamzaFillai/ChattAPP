@@ -1,0 +1,27 @@
+.home
+{
+    min-height: 100vh;
+    background-image: url("chat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home>.navi
+{
+    text-align: center;
+    color: #474f85;
+}
+
+.home>.navi>h1 button 
+{
+    background-color: transparent;
+    border: 0;
+}
+
+.home>.navi>h1 button a
+{
+    text-decoration: none;
+}
