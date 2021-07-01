@@ -54,7 +54,8 @@
     border: 1px solid rgb(0,0,0,0.3);
     padding: 12px;
     height: 640px;
-    width: 300px;
+    width: 390px;
+    overflow-y: scroll;
     background-color: white;
     margin-top: 12px;
 }
@@ -65,7 +66,7 @@
     display: flex;
     cursor: pointer;
     outline: none;
-    width: 300px;
+    width: 297px;
     margin-left: -15px;
     padding: 12px;
     border-top: 1px solid black;
@@ -102,8 +103,30 @@
 
 .message > .chat > .corps 
 {
-    min-height: 65vh;
+    height: 475px;
+    padding: 3px;
+    overflow-y: scroll;
     background-color: rgb(239,239,239);
+}
+
+.message > .chat > .corps .messagesendr
+{
+   width: 300px;
+   background-color: rgb(78, 78, 236);
+   color: white;
+   padding: 12px; 
+   word-wrap: break-word;
+   margin-left: 75%;
+   border-radius: 3px;
+}
+
+.message > .chat > .corps .messagesendl
+{
+   width: 300px;
+   background-color: #DDDDDD;
+   padding: 12px; 
+   word-wrap: break-word;
+   border-radius: 3px;
 }
 
 .message > .chat > .sending 

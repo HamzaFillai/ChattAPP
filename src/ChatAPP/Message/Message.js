@@ -104,7 +104,11 @@ function Message(props) {
                     <div className="corps">
                         {messages.map(message=>(
                             <div key={message.id}>
-                                <p>{message.contenu}</p>
+                                {message.id_send==props.match.params.id? 
+                                <p className="messagesendr">{message.contenu}</p>
+                                :
+                                <p className="messagesendl">{message.contenu}</p>    
+                            }
                             </div>
                         ))}
                     </div>
