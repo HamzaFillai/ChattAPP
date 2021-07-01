@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { BrowserRouter , Route } from 'react-router-dom'
 import Home from './ChatAPP/Home/Home'
 import Login from './ChatAPP/Login/Login'

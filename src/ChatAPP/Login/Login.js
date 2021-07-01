@@ -4,11 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button , Modal} from 'react-bootstrap';
 import Axios from "axios";
 import { useHistory } from "react-router-dom";
+import io from "socket.io-client";
 
 function Login() {
 
     const [show, setShow] = useState(false);
-
+    const [socker,setSocket] = useState(null);
     const [nom,setNom] = useState("");
     const [prenom,setPrenom] = useState("");
     const [email,setEmail] = useState("");
@@ -16,7 +17,6 @@ function Login() {
     const [message,setMessage] = useState("");
     const [val , setVal] = useState("");
     const [error,setError] = useState("");
-    const history = useHistory();
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -44,6 +44,7 @@ function Login() {
 
     const login = () =>
     {
+        
         Axios.post("http://localhost:8080/login",{
             email : email,
             password : password
