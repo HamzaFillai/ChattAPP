@@ -34,12 +34,13 @@ function Message(props) {
             console.log(response.data[0]);
             Axios.post("http://localhost:8080/viewMessage/"+props.match.params.id,{
                 iddestinataire : user.id
-            }).then((response)=>{
+            }).then((resp)=>{
                 console.log("HI");
-                console.log(response.data);
-                setMessages(response.data);
-            })
+                console.log(resp.data);
+                setMessages(resp.data);
+            });
         });
+        
     };
 
     console.log(user.id);

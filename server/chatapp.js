@@ -99,7 +99,7 @@ app.post("/login",(request,response)=>{
 
 //Get lists of users
 app.get("/listUsers/:id",(request,response)=>{
-    db.query("SELECT * FROM users WHERE id!=?",[request.params.id],(err,result)=>{
+    db.query("SELECT * FROM users WHERE id!=? ORDER BY id",[request.params.id],(err,result)=>{
         if(err){
             console.log(err);
         }else{
